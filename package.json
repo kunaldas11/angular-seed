@@ -2,7 +2,7 @@
   "name": "angular-seed-npm",
   "version": "0.0.1",
   "description": "Angular Seed that uses NPM vs Bower.",
-  "repository": "https://github.com/davidtaylorjr/angular-seed"
+  "repository": "https://github.com/davidtaylorjr/angular-seed",
   "author": "David Taylor JR.",
   "license": "MIT",
   "devDependencies": {
@@ -61,7 +61,3 @@
 
 
 
-
-
-  }
-}
