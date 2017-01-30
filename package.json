@@ -1,63 +1,59 @@
 {
-  "name": "angular-seed-npm",
-  "version": "0.0.1",
-  "description": "Angular Seed that uses NPM vs Bower.",
-  "repository": "https://github.com/davidtaylorjr/angular-seed",
-  "author": "David Taylor JR.",
-  "license": "MIT",
-  "devDependencies": {
-    "frontend-dependencies": "^0.2.1",
-    "http-server": "^0.9.0",
-    "jasmine-core": "^2.5.2",
-    "karma": "^1.4.1",
-    "karma-chrome-launcher": "^2.0.0",
-    "karma-firefox-launcher": "^1.0.0",
-    "karma-jasmine": "^1.1.0",
-    "karma-junit-reporter": "^1.2.0",
-    "protractor": "^5.0.0"
+    "name": "angular-seed-npm",
+    "version": "0.0.1",
+    "description": "Angular Seed that uses NPM vs Bower.",
+    "repository": "https://github.com/davidtaylorjr/angular-seed",
+    "author": "David Taylor JR.",
+    "license": "MIT",
+    "devDependencies": {
+        "frontend-dependencies": "^0.2.1",
+        "http-server": "^0.9.0",
+        "jasmine-core": "^2.5.2",
+        "karma": "^1.4.1",
+        "karma-chrome-launcher": "^2.0.0",
+        "karma-firefox-launcher": "^1.0.0",
+        "karma-jasmine": "^1.1.0",
+        "karma-junit-reporter": "^1.2.0",
+        "protractor": "^5.0.0"
 
-  },
-  "dependencies": {
-    "angular": "^1.6.1",
-    "angular-route": "^1.6.1",
-    "angular-loader": "^1.6.1",
-    "angular-mocks": "^1.6.1",
-    "html5-boilerplate-npm": "^4.1.0-B"
-  },
+    },
+    "dependencies": {
+        "angular": "^1.6.1",
+        "angular-route": "^1.6.1",
+        "angular-loader": "^1.6.1",
+        "angular-mocks": "^1.6.1",
+        "html5-boilerplate-latest": "^5.3.0-C"
+    },
 
-  "frontendDependencies": {
-    "target": "app/components",
-    "packages": [
-      "angular",
-      "angular-route",
-      "angular-loader",
-      "angular-mocks",
-      "html5-boilerplate-npm"
-    ]
-  },
+    "frontendDependencies": {
+        "target": "app/components",
+        "packages": [
+            "angular",
+            "angular-route",
+            "angular-loader",
+            "angular-mocks",
+            "html5-boilerplate-latest"
+        ]
+    },
 
-  "scripts": {
-    "postinstall": "./node_modules/.bin/frontend-dependencies",
+    "scripts": {
+        "postinstall": "./node_modules/.bin/frontend-dependencies",
 
-    "update-deps": "npm update",
+        "update-deps": "npm update",
 
-    "prestart": "npm install",
-    "start": "http-server -a localhost -p 8000 -c-1 ./app",
+        "prestart": "npm install",
+        "start": "http-server -a localhost -p 8000 -c-1 ./app",
 
-    "pretest": "npm install",
-    "test": "karma start karma.conf.js",
-    "test-single-run": "karma start karma.conf.js --single-run",
+        "pretest": "npm install",
+        "test": "karma start karma.conf.js",
+        "test-single-run": "karma start karma.conf.js --single-run",
 
-    "preupdate-webdriver": "npm install",
-    "update-webdriver": "webdriver-manager update",
+        "preupdate-webdriver": "npm install",
+        "update-webdriver": "webdriver-manager update",
 
-    "preprotractor": "npm run update-webdriver",
-    "protractor": "protractor e2e-tests/protractor.conf.js",
+        "preprotractor": "npm run update-webdriver",
+        "protractor": "protractor e2e-tests/protractor.conf.js",
 
-    "update-index-async": "node -e \"var fs=require('fs'),indexFile='app/index-async.html',loaderFile='app/components/angular-loader/angular-loader.min.js',loaderText=fs.readFileSync(loaderFile,'utf-8').split(/sourceMappingURL=angular-loader.min.js.map/).join('sourceMappingURL=components/angular-loader/angular-loader.min.js.map'),indexText=fs.readFileSync(indexFile,'utf-8').split(/\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/).join('//@@NG_LOADER_START@@\\n'+loaderText+'    //@@NG_LOADER_END@@');fs.writeFileSync(indexFile,indexText);\""
-  }
+        "update-index-async": "node -e \"var fs=require('fs'),indexFile='app/index-async.html',loaderFile='app/components/angular-loader/angular-loader.min.js',loaderText=fs.readFileSync(loaderFile,'utf-8').split(/sourceMappingURL=angular-loader.min.js.map/).join('sourceMappingURL=components/angular-loader/angular-loader.min.js.map'),indexText=fs.readFileSync(indexFile,'utf-8').split(/\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/).join('//@@NG_LOADER_START@@\\n'+loaderText+'    //@@NG_LOADER_END@@');fs.writeFileSync(indexFile,indexText);\""
+    }
 }
-
-
-
-
